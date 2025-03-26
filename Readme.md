@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Николай Бурцев](https://up.htmlacademy.ru/htmlcss-individual/2/user/2501191).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
