@@ -2,7 +2,7 @@
 
 * Студент: [Николай Бурцев](https://up.htmlacademy.ru/htmlcss-individual/2/user/2501191).
 * Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
-
+* Сайт: [Мой проект Седона](https://nikolaibyrtsev1988.github.io/2501191-sedona-2/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
