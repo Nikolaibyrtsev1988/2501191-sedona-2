@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Главная страница сайта Седона</title>
   </head>
   <body>
@@ -12,7 +13,7 @@
       <!-- header -->
 
       <header class="page-header">
-        <a class="header-logo" href="about.html">
+        <a class="header-logo" href="about.html" aria-current="page">
           <img src="images/logo_sedona.png" width="140" height="70" alt="Логотип Седона">
         </a>
 
@@ -39,12 +40,12 @@
         <div class="userbar">
           <ul class="userbar-list">
             <li class="userbar-item">
-              <a class="userbar-link" href="#">
+              <a class="userbar-link userbar-link-item" href="#">
                 <span class="visually-hidden"> Поиск </span>
               </a>
             </li>
             <li class="userbar-item">
-              <a class="userbar-link" href="#">
+              <a class="userbar-link userbar-link-user" href="#">
                 <span class="visually-hidden"> Избранное </span>
               </a>
             </li>
@@ -68,7 +69,7 @@
         <section class="advantages">
           <h2 class="visually-hidden"> О городе Седона </h2>
           <p class="hero-item-intro">
-            Седона - небольшой городок в Аризоне, заслуживающий большего!
+            Седона - небольшой городок в Аризоне,<br> заслуживающий большего!
           </p>
           <p class="hero-item">
             Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
@@ -89,25 +90,25 @@
               </figure>
             </li>
             <li class="advantages-item">
-              <div class="advantages-wrapper">
-                <h3 class="advantages-title"> Небольшая<br>площадь </h3>
-                <p class="advantages-description">
+              <div class="advantages-wrapper-list">
+                <h3 class="advantages-title-list"> Небольшая<br>площадь </h3>
+                <p class="advantages-description-list">
                   Все достопримечательности<br>находятся очень близко
                 </p>
               </div>
             </li>
             <li class="advantages-item">
-              <div class="advantages-wrapper">
-                <h3 class="advantages-title"> Красивая<br>дорога </h3>
-                <p class="advantages-description">
+              <div class="advantages-wrapper-item">
+                <h3 class="advantages-title-item"> Красивая<br>дорога </h3>
+                <p class="advantages-description-item">
                   Ехать в Седону из Лас-Вегаса<br>совсем не скучно
                 </p>
               </div>
             </li>
             <li class="advantages-item">
-              <div class="advantages-wrapper">
-                <h3 class="advantages-title"> Мало<br>туристов </h3>
-                <p class="advantages-description">
+              <div class="advantages-wrapper-list">
+                <h3 class="advantages-title-list"> Мало<br>туристов </h3>
+                <p class="advantages-description-list">
                   Большинство едет в Гранд<br>Каньон и толпится там
                 </p>
               </div>
@@ -133,8 +134,8 @@
 
         <section class="offers">
           <h2 class="visually-hidden"> Отдых и уют в Седоне </h2>
-          <p class="offer-item">
-            Приезжайте в Седону отдохнуть в комфорте и уюте!
+          <p class="offer-title">
+            Приезжайте в Седону отдохнуть<br> в комфорте и уюте!
           </p>
           <p class="offers-description">
             Опытный персонал и качественное обслуживание!
@@ -146,21 +147,21 @@
         <section class="advantages-user">
           <h2 class="visually-hidden">Удобства для пользователя</h2>
           <ul class="advantages-user-list">
-            <li class="advantages-user-item">
+            <li class="advantages-user-item advantages-user-housing">
               <h3 class="advantages-user-title"> Жилье </h3>
               <p class="advantages-user-description">
                 Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!
               </p>
             </li>
-            <li class="advantages-user-item">
-              <h3 class="advantages-user-title"> Еда </h3>
+            <li class="advantages-user-list">
+              <h3 class="advantages-user-title advantages-user-food"> Еда </h3>
               <p class="advantages-user-description">
                 Всегда заказывайте<br>топовый фирменный бургер,<br>вы не
                 разочаруетесь!
               </p>
             </li>
             <li class="advantages-user-item">
-              <h3 class="advantages-user-title"> Сувениры </h3>
+              <h3 class="advantages-user-title advantages-user-souvenirs"> Сувениры </h3>
               <p class="advantages-user-description">
                 Не только китайского,<br>но и настоящего местного<br>производства!
               </p>
@@ -174,7 +175,7 @@
           <h3 class="visually-hidden"> Поиск гостиниц в Седоне </h3>
           <p class="search-title"> Заинтересовались? </p>
           <p class="search-description">
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+            Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
           <a class="button button-all" href="#"> Поиск гостиницы в Седоне </a>
         </section>
