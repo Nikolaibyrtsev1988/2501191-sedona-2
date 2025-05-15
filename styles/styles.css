@@ -81,11 +81,11 @@ body {
 /* MAIN-INDEX */
 
 .main-index {
-  background-image: url(/images/index_background.jpg);    /* Фоновая картинка */
-  background-color: #FFF;                                 /* фоновый цвет */
-  color: #000000;                                       /* цвет шрифта */
+  background-image: url(../images/mask.png), url(../images/index_background.jpg);    /* Фоновая картинка */
+  background-color: #FFF;                                                         /* фоновый цвет */
+  color: #000000;                                                                 /* цвет шрифта */
   background-repeat: no-repeat;
-  background-size: 100% auto;                             /* тянемся по горизонтали на 100%, по вертикали пропорционально */
+  background-size: 100% auto;                                                       /* тянемся по горизонтали на 100%, по вертикали пропорционально */
 }
 
 
@@ -106,7 +106,7 @@ body {
 .hero-item {
   background-color: #FFF;
   color: #333;
-  font-family: "PT Sans " sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -127,7 +127,7 @@ body {
 }
 
 .advantages-title {
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   color: #FFF;
   font-size: 24px;
   font-style: normal;
@@ -137,7 +137,7 @@ body {
 }
 
 .advantages-description{
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   color: #FFF;
   font-size: 18px;
   font-style: normal;
@@ -152,7 +152,7 @@ body {
 }
 
 .advantages-title-list {
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   color: #000;
   font-size: 24px;
   font-style: normal;
@@ -163,7 +163,7 @@ body {
 
 
 .advantages-description-list{
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   color: #333;
   font-size: 18px;
   font-style: normal;
@@ -178,7 +178,7 @@ body {
 }
 
 .advantages-title-item {
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -187,7 +187,7 @@ body {
 }
 
 .advantages-description-item {
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -198,23 +198,23 @@ body {
 
 .offers {
   text-align: center;
-  background: #FFF;
+  background: #ffffff;
   color: #000000;
 }
 
 .offer-title {
-  font-family: "PT Sans" sans-serif;
-  background: #FFF;
-  color: #000;
+  font-family: "PT Sans", sans-serif;
+  background: #ffffff;
+  color: #000000;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
-  line-height: 36px; /* 120% */
+  line-height: 36px;
   text-transform: uppercase;
 }
 
 .offers-description {
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   background: #FFF;
   color: #333;
   font-size: 22px;
@@ -228,7 +228,7 @@ body {
 
 .advantages-user {
   text-align: center;
-  background: #FFF;
+  background: #ffffff;
   color: #000000;
 }
 
@@ -238,8 +238,8 @@ body {
 }
 
 .advantages-user-title {
-  color: #000;
-  font-family: "PT Sans" sans-serif;
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -249,7 +249,7 @@ body {
 
 .advantages-user-description {
   color:#333;
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -264,8 +264,8 @@ body {
 }
 
 .search-title {
-  color: #000;
-  font-family: "PT Sans" sans-serif;
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -275,7 +275,7 @@ body {
 
 .search-description {
   color: #333;
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -283,9 +283,9 @@ body {
 }
 
 .button-item {
-color:  #FFF;
+color:  #ffffff;
 background-color: #756157;
-font-family: "PT Sans" sans-serif;
+font-family: "PT Sans", sans-serif;
 font-size: 20px;
 font-style: normal;
 font-weight: 700;
@@ -295,13 +295,15 @@ text-transform: uppercase;
 
 .subscribe {
   text-align: center;
-  background-image: url(/images/bridge_catalog.png);
+  background-image: url(../images/subscribe.jpeg);
   background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 485px;
 }
 
 
 .subscribe-title {
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -310,7 +312,7 @@ text-transform: uppercase;
 }
 
 .subscribe-description {
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -318,13 +320,13 @@ text-transform: uppercase;
 }
 
 .button {
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 
 .contacts-phone {
-  font-family: "PT Sans" sans-serif;
-  color: #000;
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
   text-align: center;
   font-size: 40px;
   font-style: normal;
