@@ -22,15 +22,13 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="about.html">
-                Главная
-              </a>
+              <a class="navigation-link navigation-link-current" aria-current="page"> Главная </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html"> О Седоне </a>
+              <a class="navigation-link" href="#"> О Седоне </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="faq.html"> Гостиницы </a>
+              <a class="navigation-link" href="catalog.html"> Гостиницы </a>
             </li>
           </ul>
         </nav>
@@ -47,10 +45,11 @@
             <li class="userbar-item">
               <a class="userbar-link userbar-link-user" href="#">
                 <span class="visually-hidden"> Избранное </span>
+                <span class="favorite-results"> 12 </span>
               </a>
             </li>
             <li class="userbar-item">
-              <a class="button button-all" href="#"> Хочу сюда! </a>
+              <a class="page-header-button button button-small button-primary" href="#"> Хочу сюда! </a>
             </li>
           </ul>
         </div>
@@ -58,10 +57,10 @@
 
       <!-- main -->
 
-      <main class="main-index">
+      <main class="main-container main-index">
         <section class="hero">
           <h1 class="visually-hidden"> Поиск гостиниц в Седоне </h1>
-          <img src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в великолепнную Седону!">
+          <img class="welcome-image" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в великолепнную Седону!">
         </section>
 
         <!-- advantages -->
@@ -83,7 +82,7 @@
                 </p>
               </div>
               <figure>
-                <img src="images/city.jpg" width="800" height="385" alt="Жизнь_Седоны">
+                <img class="city-image" src="images/city.jpg" width="800" height="385" alt="Жизнь_Седоны">
                  <figcaption>
                    Жизнь в городе Седона
                  </figcaption>
@@ -177,7 +176,7 @@
           <p class="search-description">
             Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a class="button button-all" href="#"> Поиск гостиницы в Седоне </a>
+          <a class="page-header-button button button-small button-primary" href="#"> Поиск гостиницы в Седоне </a>
         </section>
 
         <!-- subscribe -->
