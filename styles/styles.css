@@ -14,6 +14,17 @@
   font-display: swap;
 }
 
+html {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+li {
+  list-style-type: none;                                /* убираем точки у списков */
+}
+
 /* BODY */
 
 body {
@@ -22,20 +33,56 @@ body {
   font-style: normal;                                     /* стиль шрифта */
   font-weight: 400;                                       /* жирность шрифта */
   line-height: 21px;                                      /* высота строки */
-  background-color: #F2F2F2;                                 /* фоновый цвет */
+  background-color: #F2F2F2;                            /* фоновый цвет */
   color: #000000;                                       /* цвет шрифта */
-  padding: 0 40px 0 40px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 100%;
+}
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+     /* VIZSUALLY-HIDDEN */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Шапка */
 
 .page-header {
+  display: flex;
   background-color: #FFF;
   color: #000000;
 }
 
+.header-logo {
+  display: flex;
+  margin-left: 70px;
+}
+
 /* Навигация сайта */
+
+.navigation-list {
+  display: flex;
+  margin-top: 5px;
+}
 
 .navigation-link {
   font-family: "PT Sans", sans-serif;                     /* Семейство шрифта, без засечек(запасной шрифт) */
@@ -47,6 +94,11 @@ body {
   color: #000000;
   text-decoration: none;                                 /* убираем подчеркивание ссылки */
   text-align: center;                                    /* текст по центру блока*/
+  display: flex;
+  padding: 20px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
 }
 
 /* Навигация пользователя */
@@ -60,18 +112,29 @@ body {
   background-color: #FFF;
   color: #000000;
   text-decoration: none;                                 /* убираем подчеркивание ссылки */
-  text-align: center;                                    /* текст по центру блока*/
+  text-align: center;                                    /* текст по центру блока */
+}
+
+.userbar-list {
+  display: flex;
+  list-style-type: none;                                 /* убираем точки у списков */
 }
 
 /* Кнопка "ХОЧУ СЮДА" */
 
-.button-all {
-  font-family: "PT Sans", sans-serif;                     /* Семейство шрифта, без засечек(запасной шрифт) */
+.button-small {
+  font-family: "PT Sans", sans-serif;                     /* Семейство шрифта, без засечек (запасной шрифт) */
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
   background: #756157;
+  border-radius: 4px;
+  width: 160px;
+  padding: 8px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   color: #ffffff;
   text-transform: uppercase;                              /* текст заглавными буквами */
   text-decoration: none;                                 /* убираем подчеркивание ссылки */
@@ -88,13 +151,17 @@ body {
   background-size: 100% auto;                                                       /* тянемся по горизонтали на 100%, по вертикали пропорционально */
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 
 /* ADVANTAGES */
 
 .hero-item-intro {
   background-color: #FFF;
   color: #333;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -334,4 +401,11 @@ text-transform: uppercase;
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+
+
+.userbar-item {
+  display: flex;
+  margin-right: 70px;
 }
