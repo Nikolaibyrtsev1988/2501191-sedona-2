@@ -14,100 +14,408 @@
   font-display: swap;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+html {
+  height: 100%;
 }
 
 li {
   list-style-type: none;
 }
 
-a {
-  text-decoration: none;
+/* BODY */
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
 }
 
 .wrapper {
-   flex-grow: 1;
-   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 1200px;
+  margin: 0 auto;
 }
+
+     /* VIZSUALLY-HIDDEN */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Шапка */
 
 .page-header {
   display: flex;
-  padding-inline: 70px;
-  column-gap: 30px;
-  outline: 2px solid red;
-  width: 1060px;
-  height: 64px;
-}
-
-.logo-img {
-  margin-left: 70px;
-}
-
-.navigation {
-  display: flex;
-  width: 940px;
-  margin: 0 auto;
-  outline: 5px solid green;
-}
-
-.navigation-list {
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  margin-left: 30px;
-  font-family: "PT Sans";                                  /* Семейство шрифта*/
-  font-style: normal;                                      /* стиль шрифта */
-  font-weight: 700;
-  padding: 20px 16px;
-}
-
-.navigation-item a{
+  background-color: #FFF;
   color: #000000;
 }
 
-.userbar-list {
+.header-logo {
   display: flex;
-  align-items: center;
-  gap: 32px;
-  margin-right: 70px;
-  padding: 20px 16px;
+  margin-left: 70px;
 }
 
-.page-header-button{
-  font-family: "PT Sans";                                  /* Семейство шрифта*/
-  font-style: normal;                                      /* стиль шрифта */
+/* Навигация сайта */
+
+.navigation {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin-left: 30px;
+  margin-top: 0;
+  font-family: "PT Sans", sans-serif;                     /* Семейство шрифта, без засечек(запасной шрифт) */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  background-color: #FFF;
+  color: #000000;
+  text-align: center;
+}
+
+.navigation-list {
+  display: flex;
+  gap: 32px;
+  margin-left: auto;
+}
+
+.navigation-link {
+  display: flex;
+  text-decoration: none; /* убираем подчеркивание ссылки */
+  background-color: #FFF;
+  color: #000000;
+}
+
+
+
+/* Навигация пользователя */
+
+.userbar-list {
+  display: flex;
+  margin-right: auto;
+}
+
+.userbar-link {
+  font-family: "PT Sans", sans-serif;                     /* Семейство шрифта, без засечек(запасной шрифт) */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  background-color: #FFF;
+  color: #000000;
+  text-decoration: none;                                 /* убираем подчеркивание ссылки */
+  text-align: center;                                    /* текст по центру блока */
+}
+
+
+.userbar-item {
+  display: flex;
+  margin-right: 70px;
+}
+
+/* Кнопка "ХОЧУ СЮДА" */
+
+.button-small {
+  font-family: "PT Sans", sans-serif;                     /* Семейство шрифта, без засечек (запасной шрифт) */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  background: #756157;
+  border-radius: 4px;
+  width: 160px;
+  padding: 8px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  text-transform: uppercase;                              /* текст заглавными буквами */
+  text-decoration: none;                                 /* убираем подчеркивание ссылки */
+  text-align: center;                                    /* текст по центру блока */
+}
+
+
+
+
+
+
+/* MAIN-INDEX */
+
+.main-container {
+  flex-grow: 1;
+}
+
+.main-index {
+  background-image: url(../images/mask.png), url(../images/index_background.jpg);    /* Фоновая картинка */
+  background-color: #FFF;                                                         /* фоновый цвет */
+  color: #000000;                                                                 /* цвет шрифта */
+  background-repeat: no-repeat;
+  background-size: 100% auto;                                                       /* тянемся по горизонтали на 100%, по вертикали пропорционально */
+}
+
+
+
+
+/* ADVANTAGES */
+
+.hero-item-intro {
+  background-color: #FFF;
+  color: #333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;                              /* текст заглавными буквами */
+  text-align: center;                                     /* текст по центру блока */
+}
+
+.hero-item {
+  background-color: #FFF;
+  color: #333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  font-style: normal;
   font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantages-list {
+  text-align: center;
+  background: #FFF;
+  color: #000000;
+}
+
+/* Блоки с голубым фоном */
+
+.advantages-wrapper {
+  background-color: #82B3D3;
+}
+
+.advantages-title {
+  font-family: "PT Sans", sans-serif;
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-description{
+  font-family: "PT Sans", sans-serif;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/* Блоки с бледно-серым фоном */
+
+.advantages-wrapper-list {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-title-list {
+  font-family: "PT Sans", sans-serif;
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+
+.advantages-description-list{
+  font-family: "PT Sans", sans-serif;
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/* Блок на серо-голубом фоне */
+
+.advantages-wrapper-item {
+  background: rgba(131, 179, 211, 0.20);
+}
+
+.advantages-title-item {
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-description-item {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/* OFFER */
+
+.offers {
+  text-align: center;
+  background: #ffffff;
+  color: #000000;
+}
+
+.offer-title {
+  font-family: "PT Sans", sans-serif;
+  background: #ffffff;
+  color: #000000;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.offers-description {
+  font-family: "PT Sans", sans-serif;
+  background: #FFF;
+  color: #333;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+
+/* ADVANTAGES-USER */
+
+.advantages-user {
+  text-align: center;
+  background: #ffffff;
+  color: #000000;
+}
+
+
+.advantages-user-item {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-user-title {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-user-description {
+  color:#333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+
+/* SEARCH*/
+
+.search {
+  text-align: center;
+}
+
+.search-title {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.search-description {
+  color: #333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.button-item {
+color:  #ffffff;
+background-color: #756157;
+font-family: "PT Sans", sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px;
+text-transform: uppercase;
+}
+
+.subscribe {
+  text-align: center;
+  background-image: url(../images/subscribe.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 485px;
+}
+
+
+.subscribe-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.subscribe-description {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 .button {
-  text-transform: uppercase;
-  white-space: nowrap;
-  font-size: 16px;
-  font-family: "PT Sans";                                  /* Семейство шрифта*/
-  font-style: normal;                                      /* стиль шрифта */
-  font-weight: 700;
-  line-height: 20px;
+  font-family: "PT Sans", sans-serif;
 }
 
-.userbar-link-user{
-  white-space: nowrap;
-}
 
-.userbar-list {
-  display: flex;
-  align-items: center;
-  font-family: "PT Sans";                                  /* Семейство шрифта*/
-  font-style: normal;                                      /* стиль шрифта */
+.contacts-phone {
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
   font-weight: 400;
-  outline: 5px solid green;
-  margin-top: -1px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
